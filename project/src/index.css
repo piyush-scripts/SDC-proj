@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black;
+  }
+}
+
+@keyframes pulse-border {
+  0% {
+    border-color: #FF0F7B;
+  }
+  50% {
+    border-color: #00FF85;
+  }
+  100% {
+    border-color: #FF0F7B;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh) translateX(-100px) rotate(45deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.2;
+  }
+  90% {
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateY(-100px) translateX(100px) rotate(45deg);
+    opacity: 0;
+  }
+}
