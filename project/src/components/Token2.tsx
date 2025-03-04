@@ -33,7 +33,7 @@ function Token2() {
         </div>
 
         <h1 className="text-5xl font-bold text-white text-center mt-12 mb-3">
-          Invitation
+          Stage 5
         </h1>
         <p className="text-[#00FF85] text-center mb-12 text-lg tracking-[0.2em] uppercase">
           Verify Your Entry

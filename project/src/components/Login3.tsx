@@ -47,7 +47,7 @@ function Login3() {
         </div>
 
         <h1 className="text-4xl font-bold text-white text-center mt-10 mb-2">
-          Game 023
+          Stage 3
         </h1>
         <p className="text-[#FF0F7B] text-center mb-8 text-sm tracking-[0.3em] uppercase">
           Medical Clearance Required

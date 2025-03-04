@@ -39,11 +39,11 @@ function Token() {
         </div>
 
         <h1 className="text-3xl font-bold text-white text-center mb-4">
-          Enter Token
+          Stage 4
         </h1>
         
         <p className="text-gray-400 text-center mb-8">
-          Please enter your invitation token to proceed
+          Please find the required token to proceed
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-6">
@@ -54,7 +54,7 @@ function Token() {
               onChange={(e) => setToken(e.target.value)}
               placeholder="XXXX-XXXX-XXXX"
               className="w-full bg-black/50 text-white border-2 border-[#00FF85] rounded-lg p-4 focus:outline-none focus:border-[#FF0F7B] transition-colors placeholder-gray-500 text-center tracking-widest"
-              maxLength={14}
+              maxLength={10000}
             />
             <div className="absolute right-3 top-1/2 transform -translate-y-1/2">
               <KeyIcon className="w-5 h-5 text-[#00FF85]" />
@@ -71,10 +71,10 @@ function Token() {
 
         <div className="mt-6 text-center">
           <p className="text-gray-400 text-sm">
-            Your token was provided in the invitation
+            Your token is provided , find it.
           </p>
           <p className="text-[#FF0F7B] text-xs mt-2">
-            Invalid tokens will result in elimination
+            You got the required things to make the token.
           </p>
         </div>
       </div>

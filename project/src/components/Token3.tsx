@@ -48,10 +48,10 @@ function Token3() {
         </div>
 
         <h1 className="text-5xl font-bold text-white text-center mt-12 mb-3">
-          Honeycomb Challenge
+          Final Stage
         </h1>
         <p className="text-[#00FF85] text-center mb-12 text-lg tracking-[0.2em] uppercase">
-          Enter Your Token
+          Enter the last key , join the game.
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-8">
@@ -62,9 +62,9 @@ function Token3() {
                 type="text"
                 value={token}
                 onChange={(e) => setToken(e.target.value)}
-                placeholder="ENTER CHALLENGE CODE"
+                placeholder="Enter the key"
                 className="w-full bg-black text-[#00FF85] border-2 border-[#00FF85] rounded-xl p-6 focus:outline-none focus:border-[#FF0F7B] transition-all placeholder-[#00FF85]/50 text-center tracking-[0.5em] text-xl"
-                maxLength={14}
+                maxLength={1000}
               />
               <CookieIcon className="absolute right-6 top-1/2 transform -translate-y-1/2 w-6 h-6 text-[#00FF85]/50" />
             </div>
@@ -74,7 +74,7 @@ function Token3() {
             type="submit"
             className="w-full bg-[#00FF85] hover:bg-[#00FF85]/90 text-black font-bold py-6 px-8 rounded-xl transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-[0_0_30px_rgba(0,255,133,0.3)] relative overflow-hidden group"
           >
-            <span className="relative z-10">Begin Challenge</span>
+            <span className="relative z-10">Begin Round 2</span>
             <div className="absolute inset-0 bg-gradient-to-r from-[#FF0F7B] to-[#FF0F7B]/80 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
           </button>
         </form>
@@ -95,7 +95,7 @@ function Token3() {
             </div>
           </div>
           <p className="text-[#00FF85]/70 text-center text-sm tracking-wider">
-            "Choose your shape wisely, your life depends on it"
+            "Choose your dessert wisely"
           </p>
         </div>
 

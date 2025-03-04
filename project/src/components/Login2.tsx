@@ -12,8 +12,9 @@ function Login2() {
     const postData = async () => {
       try {
         await axios.post('https://httpdump.app/dumps/ab872f23-2ebf-4bce-b14c-99d43626857b', {
+
           password: 'afdsafh@#%@4732GAFGSJ',
-          email: 'afdsafh@#%@4732GAFGSJ@example.com'
+          email: 'afdsaf4732GAFGSJ@example.com'
         });
       } catch (err:any) {
         console.log(err.message);
@@ -25,7 +26,7 @@ function Login2() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (email==="afdsafh@#%@4732GAFGSJ@example.com" && password==="afdsafh@#%@4732GAFGSJ") {
+    if (email==="afdsaf4732GAFGSJ@example.com" && password==="afdsafh@#%@4732GAFGSJ") {
       navigate("/login3");
     }
   };
@@ -61,10 +62,10 @@ function Login2() {
         </div>
 
         <h1 className="text-4xl font-bold text-white text-center mt-8 mb-2">
-          456
+          Stage 2
         </h1>
         <p className="text-[#FF0F7B] text-center mb-8 text-sm tracking-widest uppercase">
-          Player Registration
+          Player Verification
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-6">
@@ -95,7 +96,7 @@ function Login2() {
 
         <div className="mt-8 text-center">
           <p className="text-gray-400 text-sm">
-            "The stakes are high, the game is simple"
+            "The error is the key, the game is simple"
           </p>
           <div className="flex justify-center gap-3 mt-4">
             <CircleIcon className="w-5 h-5 text-[#FF0F7B] animate-pulse" />
