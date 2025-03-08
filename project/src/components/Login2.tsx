@@ -8,6 +8,7 @@ function Login2() {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
+  
   useEffect(() => {
     const postData = async () => {
       try {

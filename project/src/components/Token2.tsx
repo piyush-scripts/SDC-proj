@@ -5,11 +5,17 @@ import { useNavigate } from 'react-router-dom';
 function Token2() {
   const [token, setToken] = useState('');
   const navigate = useNavigate();
-
+  const expectedToken="3GSd%#weg24yd#$SCVY$#^";
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (token.trim()) {
-      navigate('/login2');
+      const isValid = token === expectedToken;
+      if(isValid){
+        navigate('/token3');
+      }else{
+        console.log("it is right there, u can't see it.")
+      }
+      
     }
   };
 
@@ -59,7 +65,7 @@ function Token2() {
             Authenticate
           </button>
         </form>
-
+<div className='text-black'>3GSd%#weg24yd#$SCVY$#^</div>
         <div className="mt-12 space-y-4">
           <p className="text-[#00FF85]/70 text-center text-sm tracking-wider">
             "Your invitation is your key to survival"

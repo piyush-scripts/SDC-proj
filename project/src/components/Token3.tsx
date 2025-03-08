@@ -1,15 +1,28 @@
-import React, { useState } from 'react';
-import { CircleIcon, SquareIcon, TriangleIcon, CookieIcon, KeyIcon } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
-
+import React, { useState } from "react";
+import {
+  CircleIcon,
+  SquareIcon,
+  TriangleIcon,
+  CookieIcon,
+  KeyIcon,
+} from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import Cookies from "js-cookie";
+Cookies.set("token", "sgfsd@%^35FfSDT7213$@^!&gdj@*", { expires: 7 });
 function Token3() {
-  const [token, setToken] = useState('');
+  const [token, setToken] = useState("");
   const navigate = useNavigate();
-
+  const expectedToken = "sgfsd@%^35FfSDT7213$@^!&gdj@*";
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (token.trim()) {
-      navigate('/login3');
+      const isValid = token === expectedToken;
+      if(isValid){
+        navigate("/login");
+      }
+      else{
+        console.log("its sweet")
+      }
     }
   };
 
@@ -29,8 +42,10 @@ function Token3() {
               transform: `rotate(${Math.random() * 360}deg)`,
             }}
           >
-            <CookieIcon 
-              className={`w-12 h-12 ${i % 2 === 0 ? 'text-[#FF0F7B]' : 'text-[#00FF85]'} opacity-20`}
+            <CookieIcon
+              className={`w-12 h-12 ${
+                i % 2 === 0 ? "text-[#FF0F7B]" : "text-[#00FF85]"
+              } opacity-20`}
             />
           </div>
         ))}

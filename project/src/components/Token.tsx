@@ -5,12 +5,22 @@ import { useNavigate } from 'react-router-dom';
 function Token() {
   const [token, setToken] = useState('');
   const navigate = useNavigate();
-
+  const expectedToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IkplcnJ5V2l0aFRvbSIsInBhc3MiOiJpX3NlZV9kZWFkX3Blb3BsZSJ9.Agd39wACSabXb5wQikYrWXUoY5s1YvbqkaL6P2JAlRk"
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // In a real app, verify the token here
     if (token.trim()) {
-      navigate('/login');
+      const isValid = token === expectedToken;
+      if(isValid){
+        navigate('/token2');
+      } else {
+        console.log({
+  "id": "JerryWithTom",
+  "pass": "i_see_dead_people"
+})
+console.log("secret is secret")
+      }
+      
     }
   };
 
